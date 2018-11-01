@@ -5,7 +5,7 @@ public class SlotMachine {
         final double PAYOUT_ODDS = 2.0;
         final double BONUS_MULTIPLIER = PAYOUT_ODDS * 2.0;
         final double MIN_LIMIT = 4.0;
-        final double MAX_LIMIT = 1000000.0;
+        final double MAX_LIMIT = 10000000000000.0;
         final double COMP_FREE_DRINK = 10.0;
         final double COMP_FREE_MOVIE = 32.0;
         final double COMP_FREE_VACATION = 1.0;
@@ -14,7 +14,7 @@ public class SlotMachine {
         int wheel3;
         int timesPlayed = 0;
         int compTimesPlayed = 0;
-        double money = 100.00;
+        double money = 63246234643.00;
         DecimalFormat df = (DecimalFormat)DecimalFormat.getCurrencyInstance();
         Scanner s = new Scanner(System.in);
         while(true) {
@@ -73,10 +73,13 @@ public class SlotMachine {
                 timesPlayed++;
                 compTimesPlayed++;
             }
-            else {
+            else if(answer == 'N') {
                 System.out.println("Fine!");
                 System.out.println("You have " + df.format(money));
                 break;
+            }
+            else {
+                System.out.println("Not valid choice smarty.");
             }
         }
     }
