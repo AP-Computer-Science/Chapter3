@@ -54,10 +54,16 @@ public class ArithmeticGame {
             else if(randValue == 3) {
                 int v1 = (int)(Math.random() * 101);
                 int v2 = (int)(Math.random() * 101);
-                if(v2 % v1 == 0) {
-                    
+                int answer = v1 / v2;
+                if(v1 >= v2 && v2 % v1 == 0) {
+                    System.out.print(v1 + " / " + v2 + ":");
+                    if(s.nextInt() == answer) {
+                        System.out.println("Correct");
+                    }
+                    else {
+                        System.out.println("Incorrect. The correct answer is " + answer);
+                    }
                 }
-                System.out.print(v1 + " / " + v2 + ":");
             }
         }
     }

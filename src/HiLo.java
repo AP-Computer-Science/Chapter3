@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class GuessTheNumber {
+public class HiLo {
     public static void main(String[] args) {
-        int randomNum = (int)(Math.random() * 101);
+        int randomNum = (int)(Math.random() * 10 + 1);
         for(int i = 3; i >= 0; i--) {
             Scanner s = new Scanner(System.in);
             System.out.print("Enter you guess: ");

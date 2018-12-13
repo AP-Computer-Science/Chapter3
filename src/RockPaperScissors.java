@@ -26,7 +26,7 @@ public class RockPaperScissors {
             else if(random == 2) {
                 computer = Values.Scissors;
             }
-            System.out.println("The computer pciked " + computer);
+            System.out.println("The computer picked " + computer);
             if(input == 'R' && computer == Values.Paper) {
                 System.out.println("You lose.");
                 computerScore++;
